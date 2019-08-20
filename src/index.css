@@ -1,0 +1,46 @@
+.cdx-metaparam {
+  position: relative;
+  background-color: #eee;
+  padding: 0.5em;
+}
+
+.cdx-metaparam [contentEditable=true][data-placeholder]::before{
+  position: absolute;
+  content: attr(data-placeholder);
+  color: #707684;
+  font-weight: normal;
+  opacity: 0;
+}
+
+.cdx-metaparam [contentEditable=true][data-placeholder]:empty::before {
+  opacity: 1;
+}
+
+.cdx-metaparam [contentEditable=true][data-placeholder]:empty:focus::before {
+  opacity: 0;
+}
+
+
+.cdx-metaparam::before {
+  content: 'Meta parameters';
+  display: block;
+  padding: 0.5em 0;
+}
+
+@media all and (max-width: 735px) {
+  .cdx-metaparam::before {
+    display: none;
+  }
+}
+
+.cdx-metaparam__description {
+  min-height: 85px;
+}
+
+.cdx-metaparam__title {
+  margin-bottom: 6px;
+}
+
+.cdx-metaparam__keywords {
+  min-height: 85px;
+}
