@@ -67,7 +67,7 @@ var editor = CodexEditor({
       config: {
         titlePlaceholder: 'Title',
         descriptionPlaceholder: 'Description',
-		keywordsPlaceholder: 'Keywords',
+		    keywordsPlaceholder: 'Keywords',
       },
     },
   },
@@ -89,8 +89,8 @@ var editor = CodexEditor({
     "type" : "metaparam",
     "data" : {
         "title" : "Page title",
-        "description" : "Avoid using this method just for lulz. It can be very dangerous opposite your daily fun stuff."
-		"keywords" : "keywords"
+        "description" : "Avoid using this method just for lulz. It can be very dangerous opposite your daily fun stuff.",
+		    "keywords" : "keywords"
     }
 }
 ```
